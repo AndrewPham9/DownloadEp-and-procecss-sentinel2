@@ -1,0 +1,36 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="ArviOp">
+    <operator>ArviOp</operator>
+    <sources>
+      <sourceProduct>${sourceProduct}</sourceProduct>
+    </sources>	
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <resampleType>${resampleType}</resampleType>
+      <upsampling>${up}</upsampling>
+      <downsampling>${down}</downsampling>
+      <redFactor>${red}</redFactor>
+      <blueFactor>${blue}</blueFactor>
+      <nirFactor>${nir}</nirFactor>
+      <gammaParameter>${gamma}</gammaParameter>
+      <redSourceBand>${redBand}</redSourceBand>
+      <blueSourceBand>${blueBand}</blueSourceBand>
+      <nirSourceBand>${nirBand}</nirSourceBand>
+    </parameters>
+  </node>
+  <node id="subsetNode">
+    <operator>Subset</operator>
+    <sources>
+      <sourceProduct refid="ArviOp"/>
+    </sources>
+    <parameters>
+      <sourceBands/>
+	  <geoRegion>${geometry}</geoRegion>
+      <copyMetadata>true</copyMetadata>
+      <subSamplingX>1</subSamplingX>
+      <subSamplingY>1</subSamplingY>
+      <tiePointGridNames/>
+      <copyMetadata>true</copyMetadata>
+    </parameters>
+  </node>
+</graph>

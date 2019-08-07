@@ -1,0 +1,15 @@
+[config]
+wget=D:/IDE_programming/wget/GnuWin32/bin/wget.exe
+gpt=D:/geology_software/SNAP/setuped/snap/bin/gpt.exe
+sen2cor=D:/geology_software/Sen2Cor-02.08.00-win64/Sen2Cor-02.08.00-win64/L2A_Process.bat
+
+[processDataset]
+bat=D:/python/STAC_intern_project/snappy/coding_earthex/config/processDataset.bat
+xml=D:/python/STAC_intern_project/snappy/coding_earthex/config/ARVI_Subset.xml
+properties1=D:/python/STAC_intern_project/snappy/coding_earthex/config/ARVI_Subset1.properties
+
+[login]
+user=andrewduy
+password=nhatduy1987
+polo=https://scihub.copernicus.eu/dhus//login
+
