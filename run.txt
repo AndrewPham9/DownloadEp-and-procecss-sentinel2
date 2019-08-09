@@ -1,0 +1,2 @@
+cd D:/python/STAC_intern_project/snappy/coding_earthex/DownloadEp-and-procecss-sentinel2
+py -3 dtek_3.py -s D:/python/STAC_intern_project/HCM/HCM.shp -d 20190720 -p HCM
