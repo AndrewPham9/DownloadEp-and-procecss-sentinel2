@@ -42,6 +42,7 @@ def run(shp,date,province):
 
 	#create a sentinel 
 	sentinel_folders = senDown.Dowfoldernload_sentinel_2(str(lowLeftLat),str(lowLeftLong),str(upRightLat),str(upRightLong),str(date))
+	# sentinel_folders = ['L1C_T48PXS_A012256_20190712T032057','L1C_T48PXT_A012256_20190712T032057']
 	for sentinel_folder in sentinel_folders:
 		path_to_zip_file = sentinel_folder + '.zip'
 		with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
@@ -61,6 +62,7 @@ def main ():
     args = parser.parse_args()
 
     result = run(args.shp,args.date,args.province)
+
 
 if __name__=='__main__':
     main()  

@@ -46,9 +46,7 @@ def processByXML (infolder, shp ,province, outfolder):
 				if line.startswith('geometry'):
 					lines[lines.index(line)] = line.replace(line.split('=')[1],str(geom))
 					f2.writelines(lines)
-	print ('\n\n\n\n\n\n\n\n\n\n\n')
-	print ('hahahahaha')
-	print ('\n\n\n\n\n\n\n\n\n\n\n')
+
 	# caculate NDVI
 	cmdLine = "%s %s -p %s -SsourceProduct=%s -t %s -f %s"%(gpt,XML,properties2,Sourceproduct_2,outRaster,'GeotifF')
 	# p1 = subprocess.Popen(cmdLine,shell=True)
