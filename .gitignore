@@ -9,6 +9,8 @@
 # Hay sử dụng kiểu folder/** để có hiệu lực cho tất cả các file bên trong thư mục.
 
 *.tif
+*.TIF
 *.zip
 *.rar
 *.tar.gz
+*L1C*
